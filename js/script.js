@@ -114,7 +114,7 @@ const appData = {
 
 };
 
-// appData.start();
+appData.start();
 
 console.log(titleName[0]);
 console.log(startButton[0]);
