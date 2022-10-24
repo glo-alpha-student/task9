@@ -1,13 +1,19 @@
 'use strict';
 
 const titleName = document.getElementsByTagName('h1');
-const buttons = document.getElementsByClassName('handler_btn');
+const startButton = document.getElementsByClassName('handler_btn');
+const resetButton = document.getElementsByClassName('handler_btn');
 const plusButton = document.querySelector('.screen-btn');
-const items1 = document.querySelectorAll('.percent');
-const items2 = document.querySelectorAll('.number');
-const range = document.querySelector('.main-controls__range > input'); //?
-const span = document.querySelector('.main-controls__range> span');//?
-const inputAll = document.getElementsByClassName('total-input');
+const percentItems = document.querySelectorAll('.percent');
+const numberItems = document.querySelectorAll('.number');
+const range = document.querySelector('.rollback input');
+const span = document.querySelector('.rollback span');
+const sum = document.getElementsByClassName('total-input');
+const count = document.getElementsByClassName('total-input');
+const countOther = document.getElementsByClassName('total-input');
+const fullContent = document.getElementsByClassName('total-input');
+const countRollback = document.getElementsByClassName('total-input');
+
 let blocks = document.querySelectorAll('.screen');
 
 const appData = {
@@ -108,20 +114,21 @@ const appData = {
 
 };
 
-appData.start();
+// appData.start();
 
-console.log(titleName[0].textContent);
-console.log(buttons);
+console.log(titleName[0]);
+console.log(startButton[0]);
+console.log(resetButton[1]);
 console.log(plusButton);
-console.log(items1);
-console.log(items2);
+console.log(percentItems);
+console.log(numberItems);
 console.log(range);
 console.log(span);
-console.log(inputAll[0]);
-console.log(inputAll[1]);
-console.log(inputAll[2]);
-console.log(inputAll[3]);
-console.log(inputAll[4]);
+console.log(sum[0]);
+console.log(count[1]);
+console.log(countOther[2]);
+console.log(fullContent[3]);
+console.log(countRollback[4]);
 console.log(blocks);
 
 
