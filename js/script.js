@@ -1,18 +1,18 @@
 'use strict';
 
-const titleName = document.getElementsByTagName('h1');
-const startButton = document.getElementsByClassName('handler_btn');
-const resetButton = document.getElementsByClassName('handler_btn');
+const titleName = document.getElementsByTagName('h1')[0];
+const startButton = document.getElementsByClassName('handler_btn')[0];
+const resetButton = document.getElementsByClassName('handler_btn')[1];
 const plusButton = document.querySelector('.screen-btn');
-const percentItems = document.querySelectorAll('.percent');
-const numberItems = document.querySelectorAll('.number');
+const percentItems = document.querySelectorAll('.other-items.percent');
+const numberItems = document.querySelectorAll('.other-items.number');
 const range = document.querySelector('.rollback input');
-const span = document.querySelector('.rollback span');
-const sum = document.getElementsByClassName('total-input');
-const count = document.getElementsByClassName('total-input');
-const countOther = document.getElementsByClassName('total-input');
-const fullContent = document.getElementsByClassName('total-input');
-const countRollback = document.getElementsByClassName('total-input');
+const span = document.querySelector('.rollback .range-value');
+const total = document.getElementsByClassName('total-input')[0];
+const count = document.getElementsByClassName('total-input')[1];
+const countOther = document.getElementsByClassName('total-input')[2];
+const fullContent = document.getElementsByClassName('total-input')[3];
+const countRollback = document.getElementsByClassName('total-input')[4];
 
 let blocks = document.querySelectorAll('.screen');
 
@@ -114,21 +114,21 @@ const appData = {
 
 };
 
-appData.start();
+// appData.start();
 
-console.log(titleName[0]);
-console.log(startButton[0]);
-console.log(resetButton[1]);
+console.log(titleName);
+console.log(startButton);
+console.log(resetButton);
 console.log(plusButton);
 console.log(percentItems);
 console.log(numberItems);
 console.log(range);
 console.log(span);
-console.log(sum[0]);
-console.log(count[1]);
-console.log(countOther[2]);
-console.log(fullContent[3]);
-console.log(countRollback[4]);
+console.log(total);
+console.log(count);
+console.log(countOther);
+console.log(fullContent);
+console.log(countRollback);
 console.log(blocks);
 
 
